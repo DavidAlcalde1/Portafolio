@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+
+
+body{
+	background-color: #5900a8;
+}
+
+.main{
+	font-family: 'Afacad Flux', sans-serif;
+	background-color: #77F3FE;
+	font-size: 14px;
+
+}
+
+.header{
+	display: flex;
+	/* flex-wrap: wrap; */
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #6C19FF;
+	margin: 0px;
+	/* border-radius: 10px; */
+
+	gap: 20px;
+}
+
+.header__name {
+	display: flex;
+    font-size: 14px; 
+    margin: 10px;
+	color: #f6f6f6;
+	justify-content: center;
+}
+
+.header__mail {
+    font-size: 12px;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #d8d3d3;
+	margin: 10px;
+}
+
+.aboutMe__contentPhoto{
+	display: flex;
+	justify-content: center;
+}
+
+.aboutMe p{
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.aboutMe__description{
+	font-size: 22px;
+	text-align: center;
+}
+
+.aboutMe__links{
+	display:flex;
+	justify-content:center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.links{
+	display:flex;
+	flex-direction: row;
+	gap: 32px;
+	list-style-type: none;
+	margin:10px;
+}
+
+.links li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.links a{
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.sobreMi{
+	margin: 10px;
+	background-color: #7BC4FF;
+	border-radius: 10px;
+}
+
+.sobreMi h2,p{
+	margin-right:10px;
+	margin-left: 10px;
+}
+
+.sobreMi__text{
+	text-align: justify;
+	text-indent: 10px;
+}
+
+.sobreMi__title{
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.content__skills h2{
+	text-align: center;
+    font-size: 22px;
+	font-weight: 500;
+    margin: 20px;
+}
+
+.skills__list{
+	display: flex;
+	flex-wrap: wrap;
+	/* gap: 5px; */
+	/* align-content: center; */
+	justify-content:space-around;
+	padding: 0;
+    margin: 0;
+}
+
+.skills__list li{
+	background-color: #fff;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	width: 30%;                   
+    margin-bottom: 20px;           
+    box-sizing: border-box;
+	transition: transform 0.3s ease; 
+}
+
+.skills__list li:hover{
+	transform: scale(1.1);
+}
+
+.skills__list img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.content__hobbies h2{
+	text-align: center;
+    font-size: 22px;
+	font-weight: 500;
+    margin: 20px;
+}
+
+.hobbies__list{
+	display: flex;
+	flex-wrap: wrap;
+	/* gap: 5px; */
+	/* align-content: center; */
+	justify-content:space-around;
+	padding: 0;
+    margin: 0;
+}
+
+.hobbies__list li{
+	background-color: #fff;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	width: 30%;                    
+    margin-bottom: 20px;           
+    box-sizing: border-box;
+	transition: transform 0.3s ease; 
+}
+
+.hobbies__list li:hover{
+	transform: scale(1.1);
+}
+
+.hobbies__list img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/*EFECTO FUEGO*/
+
+@keyframes fire {
+	0% { box-shadow: 0 0 20px #6C19FF; }
+	50% { box-shadow: 0 0 10px #820dcf; }        
+	100% { box-shadow: 0 0 30px blue; }
+}
+
+/* Clase que se agregará a los <li> para dar el efecto */
+.fire-effect {
+	animation: fire 1s infinite alternate; /* Ciclo infinito del efecto de fuego */
+	transform: scale(1.05); 
+	transition: transform 0.3s ease;
+}
+
+/*fin de EFECTO FUEGO*/
+
+
+h3{
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.content__academic h2{
+	text-align: center;
+    font-size: 22px;
+	font-weight: 500;
+    margin: 20px;
+}
+
+.academic__list{
+	display: flex;
+	flex-wrap: wrap;
+	/* gap: 5px; */
+	/* align-content: center; */
+	justify-content:space-around;
+	padding: 0;
+    margin: 0;
+}
+
+.academic__list li{
+	background-color: #fff;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	width: 30%;                    
+    margin-bottom: 20px;           
+    box-sizing: border-box;
+}
+
+.academic__list img {
+	margin-top: 4px;
+	border-radius: 8px;
+    width: 100px;
+    height: 100px;
+}
+
+.academic__list p{
+	text-align: center;
+}
+
+
+/* Centra el título de la sección */
+.content__experiences h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+/* Contenedor de cada experiencia */
+.experience__item {
+    display: flex;                  /* Hace que la imagen y el contenido se alineen en fila */
+    flex-direction: column;            /* Imagen y detalles en una fila */
+    align-items: center;            /* Centra verticalmente los elementos */
+    background-color: #7BC4FF;      /* Fondo claro para diferenciar las experiencias */
+    border-radius: 10px;            /* Bordes redondeados */
+    margin: 20px 10px;                 /* Espaciado entre artículos */
+    padding: 20px;                  /* Espaciado interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra para destacar */
+}
+
+/* Estilo para las imágenes dentro de los artículos */
+.experience__item img {
+	width: 150px;                   /* Ajusta el tamaño de la imagen */
+    height: auto;                   /* Mantiene la proporción de la imagen */
+    border-radius: 5px;	            /* Bordes ligeramente redondeados */
+
+}
+
+/* Contenedor para los detalles de la experiencia */
+.experience__details {
+    display: flex;
+    flex-direction: column;         /* Los títulos y acciones están en columna */
+	align-items: center;
+}
+
+/* Estilo para los títulos */
+.experience__details h3 {
+    font-size: 20px;
+    margin-bottom: 5px;             /* Espaciado inferior */
+}
+
+.experience__details h4 {
+
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;                    /* Color de texto más claro para subtítulos */
+    margin-bottom: 15px;            /* Espaciado inferior */
+}
+
+/* Estilo para las acciones (enlaces) */
+.experience__actions {
+    display: flex;
+    gap: 10px;                      /* Espacio entre los enlaces */
+}
+
+.experience__actions a {
+    text-decoration: none;
+    background-color: #6C19FF;      /* Color de fondo de los botones */
+    color: white;
+	width: 65px;
+	height: 18px;
+	text-align: center;
+    padding: 10px 15px;             /* Espaciado interno de los botones */
+    border-radius: 5px;             /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse */
+}
+
+/* Efecto hover en los botones */
+.experience__actions a:hover {
+    background-color: #7BC4FF;      /* Cambia el color al pasar el mouse */
+}
+
+
+/*FORMULARIO*/
+/* Sección de contacto */
+.contentContact {
+    background-color: #f9f9f9;         
+    padding: 10px 20px;                 /* Espaciado alrededor de la sección */
+    border-radius: 10px;               
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    max-width: 800px;                   /* Ancho máximo */
+    margin: 10px;                     /* Centrar la sección */
+	
+}
+
+.contact__image {
+	display:none;
+}
+
+/* Estilos del título de contacto */
+.contact__title h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact__title p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;               /* Espaciado entre el texto y el formulario */
+}
+
+/* Estilos del formulario */
+.contact__form {
+    display: flex;
+    flex-direction: column;            /* Alineación en columna */
+    gap: 20px;                         /* Espacio entre los elementos del formulario */
+}
+
+.contact__form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact__form input,
+.contact__form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;            /* Borde gris claro */
+    border-radius: 5px;                /* Bordes redondeados */
+    font-size: 16px;
+    box-sizing: border-box;            /* Asegura que el padding no afecte el tamaño total */
+    transition: border-color 0.3s ease; /* Transición suave al foco */
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+    border-color: #820dcf;             /* Borde azul al foco */
+    outline: none;                     /* Quita el borde predeterminado del navegador */
+}
+
+.contact__form textarea {
+    height: 150px;                     /* Altura personalizada para el textarea */
+    resize: vertical;                  /* Permitir que el usuario cambie el tamaño verticalmente */
+}
+
+/* Botón de enviar */
+.contact__form button {
+    background-color: #6C19FF;         /* Color de fondo azul */
+    color: white;                      /* Texto en blanco */
+    padding: 12px 20px;
+    border: none;                      /* Sin borde */
+    border-radius: 5px;                /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer;                   /* Cursor de mano al pasar sobre el botón */
+    transition: background-color 0.3s ease;
+}
+
+.contact__form button:hover {
+    background-color: #7BC4FF;         /* Fondo más oscuro al pasar el mouse */
+}
+
+
+/*FOOTER*/
+.footer {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 10px;
+	text-align: center;
+	
+}
